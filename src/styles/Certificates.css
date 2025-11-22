@@ -1,0 +1,68 @@
+/* Certificates Grid */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Certificate Item */
+.certificate-item {
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.certificate-item:hover {
+  transform: translateX(8px);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.15);
+}
+
+/* Icon */
+.cert-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+/* Certificate Name */
+.cert-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* Add checkmark on hover */
+.certificate-item::after {
+  content: '✓';
+  font-size: 1.5rem;
+  color: var(--accent);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.certificate-item:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .certificate-item {
+    padding: 1.25rem;
+  }
+}

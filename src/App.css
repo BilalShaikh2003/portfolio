@@ -1,0 +1,58 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* CSS Variables (Design Tokens) */
+:root {
+  --bg: #fafbfc;
+  --bg2: #f0f4f8;
+  --text: #1a1a1a;
+  --text2: #4b5563;
+  --accent: #0066ff;
+  --accent2: #004ecc;
+  --card: #ffffff;
+  --border: #e1e6ef;
+  --radius: 12px;
+  --font: 'Inter', system-ui, sans-serif;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg: #0b0f19;
+  --bg2: #111827;
+  --text: #f9fafb;
+  --text2: #9ca3af;
+  --card: #1f2937;
+  --border: #374151;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* App Container */
+.app {
+  min-height: 100vh;
+  padding-top: 72px; /* Height of navbar */
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
