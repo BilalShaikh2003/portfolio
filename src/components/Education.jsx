@@ -1,4 +1,4 @@
-import '../styles/Education.css';
+import './Education.css';
 
 function Education() {
   // Array of education data - easy to manage

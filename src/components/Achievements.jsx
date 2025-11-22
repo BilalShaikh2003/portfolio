@@ -1,4 +1,4 @@
-import '../styles/Achievements.css';
+import './Achievements.css';
 
 function Achievements() {
   const achievements = [

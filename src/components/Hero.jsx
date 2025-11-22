@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import '../styles/Hero.css';
+import './Hero.css';
 
 function Hero() {
   const [displayText, setDisplayText] = useState('');

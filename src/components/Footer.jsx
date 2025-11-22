@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/Footer.css';
+import './Footer.css';
 
 function Footer() {
   const [showToast, setShowToast] = useState(false);

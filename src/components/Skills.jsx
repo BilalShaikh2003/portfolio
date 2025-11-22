@@ -1,4 +1,4 @@
-import '../styles/Skills.css';
+import './Skills.css';
 
 function Skills() {
   // Array of skills - easier to manage and update
